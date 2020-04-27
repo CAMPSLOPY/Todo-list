@@ -8,7 +8,7 @@ html{
     
 }
 body{
-    background-image: linear-gradient(120deg, #f6d365, #fda085);
+    background-image: linear-gradient(120deg, #2c003e, #cd8d7b);
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
     color: rgb(255, 255, 255);
@@ -42,4 +42,60 @@ form button{
 form button:hover{
     background: #d88771;
     color: white;
+}
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-list{
+    list-style: none;
+    min-width: 30%;
+}
+
+.todo{
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    color: black;
+    padding: 1rem;
+    font-size: 1.5rem;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+.todo li{
+    flex: 1;
+}
+.trash-btn,
+.complete-btn{
+    background: #ff6f47;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 1rem;
+    /* margin: 0.1rem; */
+}
+
+.complete-btn{
+    background: rgb(42, 185, 42);
+}
+
+.todo-item{
+    padding: 0rem 0.5rem;
+}
+
+.fa-trash,.fa-check{
+    pointer-events: none;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.fall{
+   opacity: 0;
+   transform: translateY(8rem) rotateZ(20deg);
 }
