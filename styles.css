@@ -33,14 +33,14 @@ form button{
     
 }
 form button{
-    color: #d88771;
+    color: #2c003e;
     background-color: white;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 form button:hover{
-    background: #d88771;
+    background: #2c003e;
     color: white;
 }
 
@@ -70,18 +70,19 @@ form button:hover{
 }
 .trash-btn,
 .complete-btn{
-    background: #ff6f47;
+    background: rgb(43, 187, 206);
     color: white;
     border: none;
     cursor: pointer;
     font-size: 1rem;
     padding: 1rem;
+    margin: 0.5rem;
     /* margin: 0.1rem; */
 }
 
 /* this was added in javascript */
 .complete-btn{
-    background: rgb(42, 185, 42);
+    background: #723d2f;
 }
 
 .todo-item{
@@ -111,10 +112,11 @@ select{
 }
 
 select{
-    color: #ff6f47;
+    color: #2c003e;
      width: 13rem;
      cursor: pointer;
      padding: 1rem;
+     font-weight: bold;
 }
 
 .select{
@@ -127,12 +129,26 @@ select{
     position: absolute;
     top: 0;
     right: 0;
-    background: #ff6f47;
+    background: #2c003e;
     padding: 1.5rem 1rem;
     pointer-events: none;
     transition: all 0.3s ease;
 }
 .select:hover::after{
    background: white;
-   color: #ff6f47;
+   color: #2c003e;
+}
+
+.resetbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clear-all{
+    padding: 0.8rem 2rem;
+    font-size: 2rem;
+    color: white;
+    background: #2c003e;
+    cursor: pointer;
+    border: none;
 }

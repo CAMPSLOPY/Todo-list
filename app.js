@@ -5,6 +5,7 @@ const todoBtn = document.querySelector('.todo-button');
 const todoList = document.querySelector('.todo-list');
 const todoContainer = document.querySelector('.todo-container');
 const filterOption = document.querySelector('.filter-todo');
+const resetBtn = document.querySelector('.clear-all')
 
 
 // EVENT LISTENERS
@@ -12,7 +13,9 @@ const filterOption = document.querySelector('.filter-todo');
 todoBtn.addEventListener('click', addTodo);
 todoList.addEventListener('click', deleteItem);
 filterOption.addEventListener('click', filterTodo);
+resetBtn.addEventListener('click', resetData);
 document.addEventListener('DOMcontentLoaded', getTodos);
+
 
 
 
@@ -167,4 +170,10 @@ function getTodos(){
     // append the DIV created  to the UL todoList
     todoList.appendChild(todoDiv);
     });
+}
+
+function resetData(){
+    localStorage.clear();
+    window.location.reload();   
+
 }
